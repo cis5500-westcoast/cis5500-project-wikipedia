@@ -7,7 +7,7 @@ import re
 import csv
 
 # Function to write the data to a csv file
-def write_csv(original_name, player, wikipedia):
+def write_csv(original_name, player, wikipedia, image_urls):
     with open('player_wikipedia.csv', 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(['Original Name', 'Player', 'Wikipedia', 'Image URL'])
